@@ -12,9 +12,17 @@ sourceCompatibility = '17'
 sonarqube {
 	properties {
 	property ('sonar.host.url', 'http://localhost:9000')
-	property ('sonar.token', 'sqa_cac3e75058330e26788a7e0da4179c79728c331e')
+	property ('sonar.token', 'sqa_b5cb2407d52e4e4251d6a1e21702b2abdabf6a0e')
 
 	}
+}
+
+sourceSets {
+    test {
+        java {
+            srcDirs = ['src/test/java']
+        }
+    }
 }
 
 configurations {
